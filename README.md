@@ -34,9 +34,9 @@ is tagged correctly.
     * `ghcr.io/ErikTMA/pterodactyl:debian`
 * [`games`](https://github.com/pterodactyl/yolks/tree/master/games)
   * [`rust`](https://github.com/pterodactyl/yolks/tree/master/games/rust)
-    * `ghcr.io/pterodactyl/games:rust`
+    * `${{ secrets.DOCKER_USER }}/pterodactyl/games:rust`
   * [`source`](https://github.com/pterodactyl/yolks/tree/master/games/source)
-    * `ghcr.io/pterodactyl/games:source`
+    * `${{ secrets.DOCKER_USER }}/pterodactyl/games:source`
 * [`golang`](https://github.com/pterodactyl/yolks/tree/master/go)
   * [`go1.14`](https://github.com/pterodactyl/yolks/tree/master/go/1.14)
     * `ghcr.io/ErikTMA/pterodactyl:go_1.14`
@@ -87,7 +87,7 @@ is tagged correctly.
 ### Installation Images
 
 * [`alpine-install`](https://github.com/pterodactyl/yolks/tree/master/installers/alpine)
-  * `ghcr.io/pterodactyl/installers:alpine`
+  * `${{ secrets.DOCKER_USER }}/pterodactyl/installers:alpine`
 
 * [`debian-install`](https://github.com/pterodactyl/yolks/tree/master/installers/debian)
-  * `ghcr.io/pterodactyl/installers:debian`
+  * `${{ secrets.DOCKER_USER }}/pterodactyl/installers:debian`
