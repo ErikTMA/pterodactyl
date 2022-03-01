@@ -32,7 +32,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH openjdk:8u312-slim
 
 LABEL       author="Erik Andersen" maintainer="etma@vertisky.gg"
 
-LABEL       org.opencontainers.image.source="https://github.com/ErikTMA/pterodactyl"
+LABEL       org.opencontainers.image.source="https://github.com/eriktma/pterodactyl"
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN 		apt-get update -y \
