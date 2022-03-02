@@ -10,7 +10,7 @@ on:
       - java/**
 jobs:
   push:
-    name: "pterodactyl/java:${{ matrix.tag }}"
+    name: "pterodactyl/java:${{ matrix.tag }}-${{ matrix.platform }}"
     runs-on: self-hosted
     strategy:
       fail-fast: false
@@ -23,6 +23,9 @@ jobs:
           - 16
           - 17
           - 17j9
+        platform:
+          - linux/amd64
+          - linux/arm64
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v1
@@ -39,7 +42,7 @@ jobs:
         with:
           context: ./java
           file: ./java/${{ matrix.tag }}/Dockerfile
-          platforms: linux/amd64,linux/arm64
+          platforms: ${{ matrix.platform }}
           push: true
           tags: |
-            ghcr.io/eriktma/pterodactyl:java_${{ matrix.tag }}
+            ghcr.io/eriktma/pterodactyl/java:${{ matrix.tag }}-${{ matrix.platform }}

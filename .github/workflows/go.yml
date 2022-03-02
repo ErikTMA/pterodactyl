@@ -10,7 +10,7 @@ on:
       - go/**
 jobs:
   push:
-    name: "pterodactyl/go:${{ matrix.tag }}"
+    name: "pterodactyl/go:${{ matrix.tag }}-${{ matrix.platform }}"
     runs-on: self-hosted
     strategy:
       fail-fast: false
@@ -20,6 +20,9 @@ jobs:
           - 1.15
           - 1.16
           - 1.17
+        platform:
+          - linux/amd64
+          - linux/arm64
     steps:
       - uses: actions/checkout@v2
       # Setup QEMU for ARM64 Build
@@ -37,7 +40,7 @@ jobs:
         with:
           context: ./go
           file: ./go/${{ matrix.tag }}/Dockerfile
-          platforms: linux/amd64, linux/arm64
+          platforms: ${{ matrix.platform }}
           push: true
           tags: |
-            ghcr.io/eriktma/pterodactyl:go_${{ matrix.tag }}
+            ghcr.io/eriktma/pterodactyl/go:${{ matrix.tag }}-${{ matrix.platform }}
