@@ -10,7 +10,7 @@ on:
       - installers/**
 jobs:
   push:
-    name: "pterodactyl/installers:${{ matrix.tag }}-${{ matrix.platform }}"
+    name: "pterodactyl/installers:${{ matrix.tag }}"
     runs-on: self-hosted
     strategy:
       fail-fast: false
@@ -18,9 +18,6 @@ jobs:
         tag:
           - alpine
           - debian
-        platform:
-          - linux/amd64
-          - linux/arm64
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v1
@@ -37,7 +34,7 @@ jobs:
         with:
           context: ./installers
           file: ./installers/${{ matrix.tag }}/Dockerfile
-          platforms: ${{ matrix.platform }}
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/eriktma/pterodactyl/installers:${{ matrix.tag }}-${{ matrix.platform }}
+            ghcr.io/eriktma/pterodactyl/installers:${{ matrix.tag }}

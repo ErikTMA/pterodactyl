@@ -10,7 +10,7 @@ on:
       - games/**
 jobs:
   push:
-    name: "pterodactyl/games:${{ matrix.game }}-${{ matrix.platform }}"
+    name: "pterodactyl/games:${{ matrix.game }}"
     runs-on: self-hosted
     strategy:
       fail-fast: false
@@ -18,8 +18,6 @@ jobs:
         game:
           - source
           - rust
-        platform:
-          - linux/amd64
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1
@@ -35,7 +33,7 @@ jobs:
         with:
           context: ./games/${{ matrix.game }}
           file: ./games/${{ matrix.game }}/Dockerfile
-          platforms: ${{ matrix.platform }}
+          platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/eriktma/pterodactyl/games:${{ matrix.game }}-${{ matrix.platform }}
+            ghcr.io/eriktma/pterodactyl/games:${{ matrix.game }}

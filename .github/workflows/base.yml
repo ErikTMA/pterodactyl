@@ -10,7 +10,7 @@ on:
       - oses/**
 jobs:
   push:
-    name: "pterodactyl:${{ matrix.oses }}-${{ matrix.platform }}"
+    name: "pterodactyl:${{ matrix.oses }}"
     runs-on: self-hosted
     strategy:
       fail-fast: false
@@ -18,9 +18,6 @@ jobs:
         oses:
           - alpine
           - debian
-        platform:
-          - linux/amd64
-          - linux/arm64
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v1
@@ -37,7 +34,7 @@ jobs:
         with:
           context: ./oses/${{ matrix.oses }}
           file: ./oses/${{ matrix.oses }}/Dockerfile
-          platforms: ${{ matrix.platform }}
+          platforms: linux/amd64 #,linux/arm64
           push: true
           tags: |
-            ghcr.io/eriktma/pterodactyl:${{ matrix.oses }}-${{ matrix.platform }}
+            ghcr.io/eriktma/pterodactyl:${{ matrix.oses }}

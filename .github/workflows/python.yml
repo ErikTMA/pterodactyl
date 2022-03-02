@@ -10,7 +10,7 @@ on:
       - python/**
 jobs:
   push:
-    name: "pterodactyl/python:${{ matrix.tag }}-${{ matrix.platform }}"
+    name: "pterodactyl/python:${{ matrix.tag }}"
     runs-on: self-hosted
     strategy:
       fail-fast: false
@@ -20,9 +20,6 @@ jobs:
           - 3.8
           - 3.9
           - '3.10'
-        platform:
-          - linux/amd64
-          - linux/arm64
     steps:
       - uses: actions/checkout@v2
       # Setup QEMU for ARM64 Build
@@ -40,7 +37,7 @@ jobs:
         with:
           context: ./python
           file: ./python/${{ matrix.tag }}/Dockerfile
-          platforms: ${{ matrix.platform }}
+          platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            ghcr.io/eriktma/pterodactyl/python:${{ matrix.tag }}-${{ matrix.platform }}
+            ghcr.io/eriktma/pterodactyl:python_${{ matrix.tag }}
