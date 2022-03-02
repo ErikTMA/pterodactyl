@@ -10,7 +10,7 @@ on:
       - installers/**
 jobs:
   push:
-    name: "installers:{{ matrix.tag }}"
+    name: "pterodactyl/installers:${{ matrix.tag }}"
     runs-on: self-hosted
     strategy:
       fail-fast: false

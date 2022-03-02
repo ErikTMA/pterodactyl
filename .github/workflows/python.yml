@@ -10,7 +10,7 @@ on:
       - python/**
 jobs:
   push:
-    name: "yolks:python_${{ matrix.tag }}"
+    name: "pterodactyl/python:${{ matrix.tag }}"
     runs-on: self-hosted
     strategy:
       fail-fast: false

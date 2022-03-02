@@ -24,7 +24,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH ibm-semeru-runtimes:open-8-jdk
 
 LABEL       author="Erik Andersen" maintainer="etma@vertisky.gg"
 
-LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
+LABEL       org.opencontainers.image.source="https://github.com/eriktma/pterodactyl"
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN 		apt-get update -y \

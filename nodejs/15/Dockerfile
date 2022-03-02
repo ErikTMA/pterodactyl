@@ -24,7 +24,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH node:15-alpine
 
 LABEL       author="Erik Andersen" maintainer="etma@vertisky.gg"
 
-LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
+LABEL       org.opencontainers.image.source="https://github.com/eriktma/pterodactyl"
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN         apk add --update --no-cache ca-certificates curl ffmpeg git openssl sqlite tar tzdata \
