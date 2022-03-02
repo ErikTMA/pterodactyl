@@ -27,67 +27,67 @@ is tagged correctly.
 
 ## Available Images
 
-* [`base oses`](https://github.com/pterodactyl/yolks/tree/master/oses)
-  * [`alpine`](https://github.com/pterodactyl/yolks/tree/master/oses/alpine)
+* [`base oses`](https://github.com/eriktma/pterodactyl/tree/main/oses)
+  * [`alpine`](https://github.com/eriktma/pterodactyl/tree/main/oses/alpine)
     * `ghcr.io/eriktma/pterodactyl:alpine`
-  * [`debian`](https://github.com/pterodactyl/yolks/tree/master/oses/debian)
+  * [`debian`](https://github.com/eriktma/pterodactyl/tree/main/oses/debian)
     * `ghcr.io/eriktma/pterodactyl:debian`
-* [`games`](https://github.com/pterodactyl/yolks/tree/master/games)
-  * [`rust`](https://github.com/pterodactyl/yolks/tree/master/games/rust)
+* [`games`](https://github.com/eriktma/pterodactyl/tree/main/games)
+  * [`rust`](https://github.com/eriktma/pterodactyl/tree/main/games/rust)
     * `ghcr.io/pterodactyl/games:rust`
-  * [`source`](https://github.com/pterodactyl/yolks/tree/master/games/source)
+  * [`source`](https://github.com/eriktma/pterodactyl/tree/main/games/source)
     * `ghcr.io/pterodactyl/games:source`
-* [`golang`](https://github.com/pterodactyl/yolks/tree/master/go)
-  * [`go1.14`](https://github.com/pterodactyl/yolks/tree/master/go/1.14)
+* [`golang`](https://github.com/eriktma/pterodactyl/tree/main/go)
+  * [`go1.14`](https://github.com/eriktma/pterodactyl/tree/main/go/1.14)
     * `ghcr.io/eriktma/pterodactyl:go_1.14`
-  * [`go1.15`](https://github.com/pterodactyl/yolks/tree/master/go/1.15)
+  * [`go1.15`](https://github.com/eriktma/pterodactyl/tree/main/go/1.15)
     * `ghcr.io/eriktma/pterodactyl:go_1.15`
-  * [`go1.16`](https://github.com/pterodactyl/yolks/tree/master/go/1.16)
+  * [`go1.16`](https://github.com/eriktma/pterodactyl/tree/main/go/1.16)
     * `ghcr.io/eriktma/pterodactyl:go_1.16`
-  * [`go1.17`](https://github.com/pterodactyl/yolks/tree/master/go/1.17)
+  * [`go1.17`](https://github.com/eriktma/pterodactyl/tree/main/go/1.17)
     * `ghcr.io/eriktma/pterodactyl:go_1.17`
-* [`java`](https://github.com/pterodactyl/yolks/tree/master/java)
-  * [`java8`](https://github.com/pterodactyl/yolks/tree/master/java/8)
+* [`java`](https://github.com/eriktma/pterodactyl/tree/main/java)
+  * [`java8`](https://github.com/eriktma/pterodactyl/tree/main/java/8)
     * `ghcr.io/eriktma/pterodactyl:java_8`
-  * [`java8 - OpenJ9`](https://github.com/pterodactyl/yolks/tree/master/java/8j9)
+  * [`java8 - OpenJ9`](https://github.com/eriktma/pterodactyl/tree/main/java/8j9)
     * `ghcr.io/eriktma/pterodactyl:java_8j9`
-  * [`java11`](https://github.com/pterodactyl/yolks/tree/master/java/11)
+  * [`java11`](https://github.com/eriktma/pterodactyl/tree/main/java/11)
     * `ghcr.io/eriktma/pterodactyl:java_11`
-  * [`java11 - OpenJ9`](https://github.com/pterodactyl/yolks/tree/master/java/11j9)
+  * [`java11 - OpenJ9`](https://github.com/eriktma/pterodactyl/tree/main/java/11j9)
     * `ghcr.io/eriktma/pterodactyl:java_11j9`
-  * [`java16`](https://github.com/pterodactyl/yolks/tree/master/java/16)
+  * [`java16`](https://github.com/eriktma/pterodactyl/tree/main/java/16)
     * `ghcr.io/eriktma/pterodactyl:java_16`
-  * [`java16 - OpenJ9`](https://github.com/pterodactyl/yolks/tree/master/java/16j9)
+  * [`java16 - OpenJ9`](https://github.com/eriktma/pterodactyl/tree/main/java/16j9)
     * `ghcr.io/eriktma/pterodactyl:java_16j9`
-  * [`java17`](https://github.com/pterodactyl/yolks/tree/master/java/17)
+  * [`java17`](https://github.com/eriktma/pterodactyl/tree/main/java/17)
     * `ghcr.io/eriktma/pterodactyl:java_17`
-  * [`java17 - OpenJ9`](https://github.com/pterodactyl/yolks/tree/master/java/17j9)
+  * [`java17 - OpenJ9`](https://github.com/eriktma/pterodactyl/tree/main/java/17j9)
     * `ghcr.io/eriktma/pterodactyl:java_17j9`
-* [`nodejs`](https://github.com/pterodactyl/yolks/tree/master/nodejs)
-  * [`node12`](https://github.com/pterodactyl/yolks/tree/master/nodejs/12)
+* [`nodejs`](https://github.com/eriktma/pterodactyl/tree/main/nodejs)
+  * [`node12`](https://github.com/eriktma/pterodactyl/tree/main/nodejs/12)
     * `ghcr.io/eriktma/pterodactyl:nodejs_12`
-  * [`node14`](https://github.com/pterodactyl/yolks/tree/master/nodejs/14)
+  * [`node14`](https://github.com/eriktma/pterodactyl/tree/main/nodejs/14)
     * `ghcr.io/eriktma/pterodactyl:nodejs_14`
-  * [`node15`](https://github.com/pterodactyl/yolks/tree/master/nodejs/15)
+  * [`node15`](https://github.com/eriktma/pterodactyl/tree/main/nodejs/15)
     * `ghcr.io/eriktma/pterodactyl:nodejs_15`
-  * [`node16`](https://github.com/pterodactyl/yolks/tree/master/nodejs/16)
+  * [`node16`](https://github.com/eriktma/pterodactyl/tree/main/nodejs/16)
     * `ghcr.io/eriktma/pterodactyl:nodejs_16`
-  * [`node17`](https://github.com/pterodactyl/yolks/tree/master/nodejs/17)
+  * [`node17`](https://github.com/eriktma/pterodactyl/tree/main/nodejs/17)
     * `ghcr.io/eriktma/pterodactyl:nodejs_17`
-* [`python`](https://github.com/pterodactyl/yolks/tree/master/python)
-  * [`python3.7`](https://github.com/pterodactyl/yolks/tree/master/python/3.7)
+* [`python`](https://github.com/eriktma/pterodactyl/tree/main/python)
+  * [`python3.7`](https://github.com/eriktma/pterodactyl/tree/main/python/3.7)
     * `ghcr.io/eriktma/pterodactyl:python_3.7`
-  * [`python3.8`](https://github.com/pterodactyl/yolks/tree/master/python/3.8)
+  * [`python3.8`](https://github.com/eriktma/pterodactyl/tree/main/python/3.8)
     * `ghcr.io/eriktma/pterodactyl:python_3.8`
-  * [`python3.9`](https://github.com/pterodactyl/yolks/tree/master/python/3.9)
+  * [`python3.9`](https://github.com/eriktma/pterodactyl/tree/main/python/3.9)
     * `ghcr.io/eriktma/pterodactyl:python_3.9`
-  * [`python3.10`](https://github.com/pterodactyl/yolks/tree/master/python/3.10)
+  * [`python3.10`](https://github.com/eriktma/pterodactyl/tree/main/python/3.10)
     * `ghcr.io/eriktma/pterodactyl:python_3.10`
 
 ### Installation Images
 
-* [`alpine-install`](https://github.com/pterodactyl/yolks/tree/master/installers/alpine)
+* [`alpine-install`](https://github.com/eriktma/pterodactyl/tree/main/installers/alpine)
   * `ghcr.io/pterodactyl/installers:alpine`
 
-* [`debian-install`](https://github.com/pterodactyl/yolks/tree/master/installers/debian)
+* [`debian-install`](https://github.com/eriktma/pterodactyl/tree/main/installers/debian)
   * `ghcr.io/pterodactyl/installers:debian`
